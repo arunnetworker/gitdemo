@@ -1,0 +1,15 @@
+ get_url:
+        url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.95/bin/apache-tomcat-8.5.95.tar.gz 
+        dest: /opt/ 
+        mode: 777
+    - name: insttal unarchive
+      yum:
+        name: unzip 
+        state: latest 
+    - name: unarchive the tomcat 
+      unarchive: 
+        src: /opt/apache-tomcat-8.5.95.tar.gz 
+        dest: /opt/
+        remote_src: yes
+        mode: '777' 
+    - name: start tomcat server 
