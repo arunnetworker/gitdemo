@@ -1,0 +1,14 @@
+--- 
+- hosts: all 
+  remote_user: ec2-user
+  become: yes
+  tasks: 
+    - name: update linux 
+      yum:
+        name: '*'
+        state: latest 
+    - name: install java
+      yum:
+        name: java
+        state: present 
+    - name: install tomcat server 
