@@ -1,0 +1,20 @@
+APPLICATION HOSTING
+---------
+
+APP SERVER --- DYNAMIC
+WEB SERVER --- STATIC
+
+WINDOWS---IIS--INTERNET INFORMATION SERVICE
+
+LINUX---MIDDLEWARE-----APACHE---static web page
+
+http
+
+https
+
+windows--- intepub--www-root
+
+apache--httpd--- /var/www/html/
+
+
+what is chmod 777
